@@ -48,7 +48,7 @@
             // cmbOdemeYontemi
             // 
             cmbOdemeYontemi.FormattingEnabled = true;
-            cmbOdemeYontemi.Items.AddRange(new object[] { "Kredi Kartı", "Mail Order", "Paypal" });
+            cmbOdemeYontemi.Items.AddRange(new object[] { "Seçiniz", "Kredi Kartı", "Mail Order", "Paypal", "Apple Pay" });
             cmbOdemeYontemi.Location = new Point(268, 80);
             cmbOdemeYontemi.Name = "cmbOdemeYontemi";
             cmbOdemeYontemi.Size = new Size(121, 23);
@@ -104,6 +104,7 @@
             Controls.Add(lblOdemeYontemi);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

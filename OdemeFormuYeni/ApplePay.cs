@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OdemeFormuYeni
 {
-    public class KrediKarti : IOdemeTipi
+    public class ApplePay : IOdemeTipi
     {
         public string Ode(double tutar)
         {
-            return " Kredi Kartı " + tutar + "  ile ödendi";
+            return " Apple Pay ile " + tutar + " TL ödeme yapıldı";
         }
     }
 }

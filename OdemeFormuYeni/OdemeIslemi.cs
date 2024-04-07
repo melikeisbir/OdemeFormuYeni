@@ -10,6 +10,7 @@ namespace OdemeFormuYeni
     {
         IOdemeTipi odeme;
 
+        //constructor injection
         public OdemeIslemi(IOdemeTipi odeme)
         {
             this.odeme = odeme;
