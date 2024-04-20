@@ -50,7 +50,7 @@ namespace OdemeFormuYeni
         }
         public void OdemeTipiGetir()
         {
-            connectionString = @"Data Source=MELI\SQLEXPRESS;Initial Catalog=TechCareer; Integrated Security=SSPI;";
+            connectionString = @"Data Source=MELI\SQLEXPRESS;Initial Catalog=TechCareer;Trusted_Connection=True; MultipleActiveResultSets=true; TrustServerCertificate=True;";
             List<OdemeTipi> odemeTipleri = null;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
